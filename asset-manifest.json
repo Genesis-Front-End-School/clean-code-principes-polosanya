@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontend-school/static/css/main.2262a69f.css",
+    "main.js": "/frontend-school/static/js/main.3ee85eb6.js",
+    "index.html": "/frontend-school/index.html",
+    "main.2262a69f.css.map": "/frontend-school/static/css/main.2262a69f.css.map",
+    "main.3ee85eb6.js.map": "/frontend-school/static/js/main.3ee85eb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2262a69f.css",
+    "static/js/main.3ee85eb6.js"
+  ]
+}
