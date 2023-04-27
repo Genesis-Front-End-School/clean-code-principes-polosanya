@@ -1,9 +1,9 @@
 import React from "react";
-import { Course } from "../../types/Course";
 import { useNavigate } from "react-router-dom";
 import Rating from "@mui/material/Rating";
 import HoverVideoPlayer from "react-hover-video-player";
 import CircularProgress from "@mui/material/CircularProgress";
+import { Course } from "types/Course";
 
 type Props = {
   course: Course;

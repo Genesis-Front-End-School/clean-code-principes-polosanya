@@ -1,13 +1,9 @@
 import React, { useMemo, useState } from "react";
 import "./Courses.scss";
-// import { coursesFromServer } from './api/mockData';
-import CoursesList from "../../components/CoursesList/CoursesList";
-// import { coursesApi } from './api/api';
 import CircularProgress from "@mui/material/CircularProgress";
 import Pagination from "@mui/material/Pagination";
-// import axios from "axios";
-import { Course } from "../../types/Course";
-// import { baseUrl, token } from "../../api/api";
+import CoursesList from "components/CoursesList/CoursesList";
+import { Course } from "types/Course";
 
 type Props = {
   courses: Course[];
@@ -16,7 +12,7 @@ type Props = {
 
 const Courses: React.FC<Props> = ({ courses, isLoading }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const preparedCouses = useMemo(
+  const preparedCourses = useMemo(
     () => courses.slice((currentPage - 1) * 10, (currentPage - 1) * 10 + 10),
     [courses, currentPage]
   );
@@ -36,7 +32,7 @@ const Courses: React.FC<Props> = ({ courses, isLoading }) => {
               setCurrentPage(num);
             }}
           />
-          <CoursesList courses={preparedCouses} />
+          <CoursesList courses={preparedCourses} />
         </>
       )}
     </div>

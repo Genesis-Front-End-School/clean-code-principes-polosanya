@@ -5,10 +5,10 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LockIcon from "@mui/icons-material/Lock";
 import { useMemo } from "react";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-import { Lesson } from "../../types/Lesson";
-import { Course } from "../../types/Course";
-import { useLocalStorage } from "../../helpers/useLocalStorage";
+import { Course } from "types/Course";
+import { Lesson } from "types/Lesson";
+import { useLocalStorage } from "helpers/useLocalStorage";
+import VideoPlayer from "components/VideoPlayer/VideoPlayer";
 
 type Props = {
   lessons: Lesson[];

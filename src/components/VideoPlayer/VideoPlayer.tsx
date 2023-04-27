@@ -1,6 +1,6 @@
+import { useLocalStorage } from "helpers/useLocalStorage";
 import { useEffect, useRef, useState } from "react";
 import ReactHlsPlayer from "react-hls-player";
-import { useLocalStorage } from "../../helpers/useLocalStorage";
 
 type Props = {
   link: string;
@@ -33,7 +33,7 @@ const VideoPlayer: React.FC<Props> = ({ link }) => {
     if (playerRef.current) {
       playerRef.current.playbackRate = speed;
     }
-  }, [speed])
+  }, [speed, playerRef])
 
   useEffect(() => {
     const handleKeyUp = (event: KeyboardEvent) => {

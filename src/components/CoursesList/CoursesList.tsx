@@ -1,6 +1,6 @@
+import CourseCard from "components/CourseCard/CourseCard";
 import React from "react";
-import { Course } from "../../types/Course";
-import CourseCard from "../CourseCard/CourseCard";
+import { Course } from "types/Course";
 
 type Props = {
   courses: Course[];
