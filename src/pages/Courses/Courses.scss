@@ -1,0 +1,17 @@
+.Courses {
+  text-align: center;
+
+  &__pagination {
+    margin: 0 auto;
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+  }
+
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
