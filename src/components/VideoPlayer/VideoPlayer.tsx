@@ -12,7 +12,7 @@ const VideoPlayer: React.FC<Props> = ({ link }) => {
   const [speed, setSpeed] = useState<number>(1);
 
   useEffect(() => {
-    const player = playerRef.current; //DRY
+    const player = playerRef.current; 
 
     if (videoProgress !== 0 && player) {
       player.currentTime = videoProgress;
@@ -35,27 +35,23 @@ const VideoPlayer: React.FC<Props> = ({ link }) => {
     if (playerRef.current) {
       playerRef.current.playbackRate = speed;
     }
-  }, [speed, playerRef])
+  }, [speed, playerRef]);
 
   useEffect(() => {
     const increaseSpeedButton = "+";
-    const decreaseSpeedButton = "-"; // Magic symbols
+    const decreaseSpeedButton = "-";
 
     const handleKeyUp = (event: KeyboardEvent) => {
       if (event.key === increaseSpeedButton) {
-        setSpeed(prevSpeed => (
-          prevSpeed !== 2
-            ? prevSpeed + 0.25
-            : prevSpeed
-        ));
+        setSpeed((prevSpeed) =>
+          prevSpeed !== 2 ? prevSpeed + 0.25 : prevSpeed
+        );
       }
-  
+
       if (event.key === decreaseSpeedButton) {
-        setSpeed(prevSpeed => (
-          prevSpeed !== 0.25
-            ? prevSpeed - 0.25
-            : prevSpeed
-        ));
+        setSpeed((prevSpeed) =>
+          prevSpeed !== 0.25 ? prevSpeed - 0.25 : prevSpeed
+        );
       }
     };
 
