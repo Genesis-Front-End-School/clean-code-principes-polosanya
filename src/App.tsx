@@ -12,8 +12,8 @@ import PageNotFound from "pages/PageNotFound/PageNotFound";
 const App: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
   const [token, setToken] = useLocalStorage<string>("token", "");
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
     if (!token) {
