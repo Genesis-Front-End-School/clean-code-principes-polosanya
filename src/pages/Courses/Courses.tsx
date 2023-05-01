@@ -12,8 +12,13 @@ type Props = {
 
 const Courses: React.FC<Props> = ({ courses, isLoading }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  const coursesPerPage = 10; 
   const preparedCourses = useMemo(
-    () => courses.slice((currentPage - 1) * 10, (currentPage - 1) * 10 + 10),
+    () =>
+      courses.slice(
+        (currentPage - 1) * coursesPerPage,
+        (currentPage - 1) * coursesPerPage + coursesPerPage
+      ),
     [courses, currentPage]
   );
 
@@ -27,7 +32,7 @@ const Courses: React.FC<Props> = ({ courses, isLoading }) => {
         <>
           <Pagination
             className="Courses__pagination"
-            count={Math.round(courses.length / 10)}
+            count={Math.round(courses.length / coursesPerPage)}
             onChange={(e, num) => {
               setCurrentPage(num);
             }}

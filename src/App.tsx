@@ -7,6 +7,7 @@ import { coursesApi } from "./api/api";
 import { Course } from "./types/Course";
 import { useLocalStorage } from "./helpers/useLocalStorage";
 import Alert from "@mui/material/Alert";
+import PageNotFound from "pages/PageNotFound/PageNotFound";
 
 const App: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
@@ -55,7 +56,7 @@ const App: React.FC = () => {
               element={<CoursePage token={token} />}
             />
           </Route>
-          <Route path="*" element={<h1 className="title">Page not found</h1>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       )}
     </div>
