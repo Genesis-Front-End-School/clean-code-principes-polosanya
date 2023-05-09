@@ -23,14 +23,15 @@ const Courses: React.FC<Props> = ({ courses, isLoading }) => {
   );
 
   return (
-    <div className="Courses">
+    <div className="Courses" data-testid="courses-list">
       {isLoading ? (
-        <div className="Courses__loader">
+        <div className="Courses__loader" data-testid="loader">
           <CircularProgress />
         </div>
       ) : (
         <>
           <Pagination
+            data-testid="pagination"
             className="Courses__pagination"
             count={Math.round(courses.length / coursesPerPage)}
             onChange={(e, num) => {
