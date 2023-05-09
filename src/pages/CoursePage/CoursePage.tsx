@@ -14,8 +14,8 @@ type Props = {
 const CoursePage: React.FC<Props> = ({ token }) => {
   const { courseId } = useParams();
   const [course, setCourse] = useState<Course>();
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
     if (courseId) {

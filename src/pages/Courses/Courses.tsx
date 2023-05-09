@@ -11,7 +11,7 @@ type Props = {
 };
 
 const Courses: React.FC<Props> = ({ courses, isLoading }) => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const coursesPerPage = 10; 
   const preparedCourses = useMemo(
     () =>
