@@ -10,4 +10,4 @@ React, TypeScript, MUI, SASS, Axios, React-Router, react-hls-player, react-hover
 
 ## Project's architecture
 
-![architecture](https://imgur.com/a/Uo4DTwH)
+![architecture](https://i.imgur.com/NUkY29F.png)
