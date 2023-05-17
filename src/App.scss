@@ -1,3 +1,11 @@
 .App {
   text-align: center;
+
+  &--light {
+    color: black;
+  }
+
+  &--dark {
+    color: white;
+  }
 }
