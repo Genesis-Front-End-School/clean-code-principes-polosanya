@@ -7,3 +7,7 @@ Demo link [Frontend School](https://polosanya.github.io/frontend-school/).
 ## Technologies
 
 React, TypeScript, MUI, SASS, Axios, React-Router, react-hls-player, react-hover-video-player
+
+## Project's architecture
+
+![architecture](https://i.imgur.com/NUkY29F.png)
