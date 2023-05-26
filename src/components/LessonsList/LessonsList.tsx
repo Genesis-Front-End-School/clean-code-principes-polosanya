@@ -7,7 +7,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import { useMemo } from "react";
 import { Course } from "types/Course";
 import { Lesson } from "types/Lesson";
-import { useLocalStorage } from "helpers/useLocalStorage";
+import { useLocalStorage } from "hooks-package";
 import VideoPlayer from "components/VideoPlayer/VideoPlayer";
 
 type Props = {
