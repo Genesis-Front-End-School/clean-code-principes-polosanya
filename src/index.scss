@@ -1,3 +1,4 @@
+@import "./helpers/variables";
 @import url(./components/CoursesList/CoursesList.scss);
 @import url(./components/CourseCard/CourseCard.scss);
 @import url(./pages/CoursePage/CoursePage.scss);
@@ -10,7 +11,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f2f7;
+  // background-color: $background-color-light;
+}
+
+.light {
+  background-color: $background-color-light;
+}
+
+.dark {
+  background-color: $background-color-dark;
 }
 
 code {
