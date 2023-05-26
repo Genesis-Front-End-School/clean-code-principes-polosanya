@@ -5,7 +5,7 @@ import Courses from "./pages/Courses/Courses";
 import CoursePage from "./pages/CoursePage/CoursePage";
 import { coursesApi } from "./api/api";
 import { Course } from "./types/Course";
-import { useLocalStorage } from "./helpers/useLocalStorage";
+import { useLocalStorage } from "hooks-package";
 import Alert from "@mui/material/Alert";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import IconButton from "@mui/material/IconButton";

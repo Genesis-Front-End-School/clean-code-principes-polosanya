@@ -1,4 +1,4 @@
-import { useLocalStorage } from "helpers/useLocalStorage";
+import { useLocalStorage } from "hooks-package";
 import { useEffect, useRef, useState } from "react";
 import ReactHlsPlayer from "react-hls-player";
 
